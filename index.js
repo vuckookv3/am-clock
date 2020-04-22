@@ -7,11 +7,8 @@ select.onchange = function () {
     customDrop.remove();
     text.style.display = 'flex';
     select.disabled = true;
+    t.innerHTML = getRandom(select.selectedIndex - 1);
 }
-
-var DB = [
-
-]
 
 var DB = [
     [
@@ -160,13 +157,11 @@ var DB = [
     ]
 ];
 
-function getRandom() {
-    const randomNum = Math.floor(Math.random() * DB.length);
+function getRandom(i) {
+    // const randomNum = Math.floor(Math.random() * DB.length);
     const rand = Math.floor(Math.random() * 4);
-    return DB[randomNum][rand];
+    return DB[i][rand];
 }
-
-t.innerHTML = getRandom();
 
 
 var x, i, j, selElmnt, a, b, c;
