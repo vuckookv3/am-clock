@@ -192,6 +192,7 @@ var DB = [
     "Imaćete mnogo nesreće u ljubavi u narednom periodu.",
     "Osoba sa kojom ste se jednom videli misli na vaše telo.",
     "Vreme je za promenu.",
+    "Pošaljite poruku Kekeriću."
 ];
 
 function getRandom(i) {
